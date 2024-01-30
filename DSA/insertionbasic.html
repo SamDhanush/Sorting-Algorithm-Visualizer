@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<style>
+    body{
+        background-image: url("images.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:relative;
+       
+    }
+    h1{
+        color:brown;
+    }
+    h2{
+        text-align:center;
+    }
+    .bubhead
+    {
+         margin:auto;
+         border:2px solid black;
+         background-color: aliceblue;
+    }
+    .bubmid1{
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+         font-family:cursive;
+         font-size:larger;
+         text-align:justify;
+    }
+    .bubmid2{
+        top:320px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+    }
+    .bubmid3{
+        border:2px solid black;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        font-family: cursive;
+        font-size:20px;
+         text-align:justify;
+    }
+     .bubmid4{
+        top:620px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+     }
+     .bubmid5{
+        font-family: cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     .bubmid6{
+        top:2150px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+     }
+     .bubmid7{
+        font-family:cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     .bubmid8{
+        top:2800px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+     }
+     .bubmid9{
+        font-family:cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     .bubmid10{
+        top:3000px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+     }
+     .bubmid11{
+        font-family:cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     .bubmid12{
+        top:3150px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+     }
+     .bubmid13{
+        font-family:cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     .bubmid14{
+        top:3350px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+         font-family:cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     a{
+        font-display: none;
+     }
+    
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bubhead">
+    <center><h1>INSERTION SORT ALGORITHM</h1></center>
+</div>
+<div class="bubmid">
+    <h2>INSERTION SORT</h2>
+    <div class="bubmid1">
+        
+        Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.
+      The array is virtually split into a sorted and an unsorted part. 
+        Values from the unsorted part are picked and placed at the correct position in the sorted part.
+    </div>
+</div>
+<div class="bubmid2">
+    <h2>INSERTION SORT ALGORITHM</h2>
+   <div class="bubmid3">
+   <ol type="circle">
+    <li>To sort an array of size N in ascending order iterate over the array and compare the current element (key) to its predecessor, if the key element is smaller than its predecessor, 
+        compare it to the elements before.</li>
+    <li>Move the greater elements one position up to make space for the swapped element.</li>
+    
+ </ol>
+</div>
+</div>
+<div class="bubmid4">
+    <h2>HOW DOES IT WORKS</h2>
+    <div class="bubmid5">
+        Let us understand the working of bubble sort with the help of the following illustration:
+        <br>
+        <br>
+        Input: arr[]: {12, 11, 13, 5, 6}
+        <br>Pass 1:<br>
+         <ol type="circle">
+            <li>Initially, the first two elements of the array are compared in insertion sort.</li>
+            <li>Here, 12 is greater than 11 hence they are not in the ascending order and 12 is not at its correct position. Thus, swap 11 and 12.
+                So, for now 11 is stored in a sorted sub-array.</li>
+         </ol>
+         <br>Pass 2:<br>
+         <ol type="circle">
+            <li>Now, move to the next two elements and compare them</li>
+            <li>Here, 13 is greater than 12, thus both elements seems to be in ascending order, hence, no swapping will occur. 12 also stored in a sorted sub-array along with 11.</li>
+         </ol>
+         <br>Pass 3:<br>
+         <ol type="circle">
+            <li>Now, two elements are present in the sorted sub-array which are 11 and 12
+            <li>Moving forward to the next two elements which are 13 and 5</li>
+            <li>Both 5 and 13 are not present at their correct place so swap them</li>
+            <li>After swapping, elements 12 and 5 are not sorted, thus swap again</li>
+            <li>Here, again 11 and 5 are not sorted, hence swap again</li>
+            <li>Here, 5 is at its correct position</li>
+         </ol>
+         <br>Pass 4:<br>
+         <ol type="circle">
+            <li>Now, the elements which are present in the sorted sub-array are 5, 11 and 12
+            <li>Moving to the next two elements 13 and 6</li>
+            <li>Clearly, they are not sorted, thus perform swap between both</li>
+            <li>Now, 6 is smaller than 12, hence, swap again</li>
+            <li>Here, also swapping makes 11 and 6 unsorted hence, swap again</li>
+            <li>Finally, the array is completely sorted.</li>
+         </ol>
+         <br>
+         Illustration:
+         <br>
+         <img src="insertionpass.png" width="750px" height="280px" alt="Illustration">
+    </div>
+</div>
+
+
+<div class="bubmid6">
+    <h2>IMPLEMENTION </h2>
+    <div class="bubmid7">
+        Below is the implementation of the insertion sort. It can be optimized by stopping the algorithm if the inner loop didn’t cause any swap.
+       <ul>
+           <li>procedure insertionSort( A : array of items )</li>
+            <li>int holePosition</li>
+            <li>int valueToInsert</li>
+             
+            <li> for i = 1 to length(A) inclusive do:</li>
+             
+            /* select value to be inserted */
+            <li>valueToInsert = A[i]</li>
+            <li>holePosition = i</li>
+               
+           /*locate hole position for the element to be inserted */
+                 
+            <li>while holePosition > 0 and A[holePosition-1] > valueToInsert do:</li>
+            <li>A[holePosition] = A[holePosition-1]</li>
+            <li> holePosition = holePosition -1</li>
+            <li>end while</li>
+                 
+            /* insert the number at hole position */
+            <li> A[holePosition] = valueToInsert</li>
+               
+            <li>end for</li>
+             
+            <li>end procedure</li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="bubmid8">
+    <h2>Time Complexity of Insertion Sort</h2>
+    <div class="bubmid9">
+       <ul>
+        <li>The worst-case time complexity of the Insertion sort is O(N^2)</li>
+        <li>The average case time complexity of the Insertion sort is O(N^2)</li>
+        <li>The time complexity of the best case is O(N).</li>
+       </ul>
+    </div>
+</div>
+
+<div class="bubmid10">
+    <h2>Space Complexity of Insertion Sort</h2>
+    <div class="bubmid11">
+       <ul>
+        <li>The auxiliary space complexity of Insertion Sort is O(1)</li>
+       </ul>
+    </div>
+</div>
+
+<div class="bubmid12">
+    <h2>Characteristics of Insertion Sort</h2>
+    <div class="bubmid13">
+      <ul type="circle">
+       <li>This algorithm is one of the simplest algorithms with a simple implementation</li>
+       <li>Basically, Insertion sort is efficient for small data values</li>
+       <li>Insertion sort is adaptive in nature, i.e. it is appropriate for data sets that are already partially sorted.</li>
+      </ul>
+    </div>
+</div>
+
+<div class="bubmid14">
+    <h2>Here we provide the visualization for the Insertion sort algirithm:</h2>
+    <br>
+    The visualization will provide you the bettter understanding experience about the insertion sort.
+    <br><br>
+    <a href="insertion.html">Click here to view the Visualization.</a>
+</div>
+</body>
+</html>

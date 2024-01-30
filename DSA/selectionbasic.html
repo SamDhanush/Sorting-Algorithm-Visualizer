@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<style>
+    body{
+        background-image: url("images.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:relative;
+       
+    }
+    h1{
+        color:brown;
+    }
+    h2{
+        text-align:center;
+    }
+    .bubhead
+    {
+         margin:auto;
+         border:2px solid black;
+         background-color: aliceblue;
+    }
+    .bubmid1{
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+         font-family:cursive;
+         font-size:larger;
+         text-align:justify;
+    }
+    .bubmid2{
+        top:320px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+    }
+    .bubmid3{
+        border:2px solid black;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        font-family: cursive;
+        font-size:20px;
+         text-align:justify;
+    }
+     .bubmid4{
+        top:620px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+     }
+     .bubmid5{
+        font-family: cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     .bubmid6{
+        top:3250px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+     }
+     .bubmid7{
+        font-family: cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     .bubmid8{
+        top:3900px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+     }
+     .bubmid9{
+        font-family: cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     .bubmid10{
+        top:4100px;
+        margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+     }
+     .bubmid11{
+        font-family: cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     .bubmid12{
+         top:4350px;
+         margin:30px;
+         width:50%;
+         height:120px;
+         position:absolute;
+         left:20%;
+         font-family:cursive;
+        font-size:20px;
+         text-align:justify;
+     }
+     a{
+        font-display: none;
+     }
+    
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bubhead">
+    <center><h1>SELECTION SORT ALGORITHM</h1></center>
+</div>
+<div class="bubmid">
+    <h2>SELECTION</h2>
+    <div class="bubmid1">
+        
+        Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting
+         the smallest (or largest) element from the unsorted portion of the list and moving it to the sorted portion of the list. 
+         The algorithm repeatedly selects the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted part.
+          This process is repeated for the remaining unsorted portion until the entire list is sorted. 
+    </div>
+</div>
+<div class="bubmid2">
+    <h2>BUBBLE SORT ALGORITHM</h2>
+   <div class="bubmid3">
+   <ol type="circle">
+    <li>Set MIN to location 0 </li>
+    <li>Search the minimum element in the list </li>
+    <li>Swap with value at location MIN</li>
+    <li>Increment MIN to point to next element</li>
+    <li> Repeat until list is sorted</li>
+ </ol>
+</div>
+</div>
+<div class="bubmid4">
+    <h2>HOW DOES IT WORKS</h2>
+    <div class="bubmid5">
+        Let us understand the working of bubble sort with the help of the following illustration:
+        <br>
+        <br>
+        Input: arr[] = {64, 25, 12, 22, 11}
+        <br>Pass 1:<br>
+        <ul>
+            <li>For the first position in the sorted array, the whole array is traversed from index 0 to 4 sequentially.
+         The first position where 64 is stored presently, after traversing whole array it is clear that 11 is the lowest value.</li>
+         <li>Thus, replace 64 with 11. After one iteration 11, 
+            which happens to be the least value in the array, tends to appear in the first position of the sorted list.</li>
+        </ul>
+        
+        <img src="sel1.webp" width="700" height="300" alt="Image of pass1">
+         <br>
+         Pass 2:<br>
+        <ul>
+            <li>For the second position, where 25 is present, again traverse the rest of the array in a sequential manner.</li>
+         <li>After traversing, we found that 12 is the second lowest value in the array and it should appear at the second place in the array, thus swap these values.</li>
+        </ul>
+        
+        <img src="sel2.webp" width="700" height="300" alt="Image of pass1">
+         <br>
+         Pass 3:<br>
+        <ul>
+            <li>Now, for third place, where 25 is present again traverse the rest of the array and find the third least value present in the array.</li>
+         <li>While traversing, 22 came out to be the third least value and it should appear at the third place in the array, thus swap 22 with element present at third position.</li>
+        </ul>
+        <img src="sel3.webp" width="700" height="300" alt="Image of pass1">
+         <br>
+
+         Pass 4:<br>
+         <ul>
+             <li>Similarly, for fourth position traverse the rest of the array and find the fourth least element in the array </li>
+          <li>As 25 is the 4th lowest value hence, it will place at the fourth position.
+        </li>
+         </ul>
+         <img src="sel4.webp" width="700" height="300" alt="Image of pass1">
+          <br>
+
+          Pass 5:<br>
+          <ul>
+              <li>At last the largest value present in the array automatically get placed at the last position in the array</li>
+           <li>The resulted array is the sorted array.</li>
+          </ul>
+          <img src="sel5.webp" width="700" height="300" alt="Image of pass1">
+           <br>
+    </div>
+</div>
+
+<div class="bubmid6">
+    <h2>IMPLEMETATION OF SELECTION SORT</h2>
+    <div class="bubmid7">
+        Below is the implementation of the insertion sort. It can be optimized by stopping the algorithm if the inner loop didn’t cause any swap.
+      <ul type="circle">
+        <li>procedure selection sort </li>
+        <li>list  : array of items</li>
+            <li>n     : size of list</li>
+
+                <li> for i = 1 to n - 1</li>
+   /* set current element as minimum*/
+   <li> min = i    </li>
+  
+      /* check the element to be minimum */
+
+      <li> for j = i+1 to n </li>
+        <li>  if list[j] < list[min] then</li>
+            <li>   min = j;</li>
+                <li>end if</li>
+                    <li>end for</li>
+
+      /* swap the minimum element with the current element*/
+      <li>if indexMin != i  then</li>
+      <li>swap list[min] and list[i]</li>
+        <li>  end if</li>
+            <li>end for</li>
+	
+                <li>end procedure</li>
+      </ul>
+
+    </div>
+</div>
+</div>
+
+<div class="bubmid8">
+    <h2>Time Complexity of Insertion Sort</h2>
+    <div class="bubmid9">
+       <ul>
+        <li>One loop to select an element of Array one by one = O(N)</li>
+        <li>Another loop to compare that element with every other Array element = O(N)</li>
+        <li>Therefore overall complexity = O(N) * O(N) = O(N*N) = O(N2)</li>
+       </ul>
+    </div>
+</div>
+
+<div class="bubmid10">
+    <h2>Space Complexity of Insertion Sort</h2>
+    <div class="bubmid11">
+       <ul>
+        <li>O(1) as the only extra memory used is for temporary variables while swapping two values in Array. </li>
+        <li>The selection sort never makes more than O(N) swaps and can be useful when memory writing is costly. </li>
+       </ul>
+    </div>
+</div>
+
+<div class="bubmid12">
+    <h2>Here we provide the visualization for the Selection sort algirithm:</h2>
+    <br>
+    The visualization will provide you the bettter understanding experience about the selection sort.
+    <br><br>
+    <a href="selection.html">Click here to view the Visualization.</a>
+</div>
+</body>
+</html>
